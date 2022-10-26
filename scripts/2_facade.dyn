@@ -1,0 +1,550 @@
+{
+  "Uuid": "6fda496c-bf56-4b22-b411-7ef265ba641b",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "2facade_refactored",
+  "ElementResolver": {
+    "ResolutionMap": {
+      "Math": {
+        "Key": "DSCore.Math",
+        "Value": "DSCoreNodes.dll"
+      },
+      "Point": {
+        "Key": "Autodesk.DesignScript.Geometry.Point",
+        "Value": "ProtoGeometry.dll"
+      },
+      "Vector": {
+        "Key": "Autodesk.DesignScript.Geometry.Vector",
+        "Value": "ProtoGeometry.dll"
+      }
+    }
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "DSRevitNodesUI.Levels, DSRevitNodesUI",
+      "SelectedIndex": 2,
+      "SelectedString": "Roof",
+      "NodeType": "ExtensionNode",
+      "Id": "2dd374bc96eb4a7cb13e5a0a2920e89a",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "995c92313d2a4e25be603634c6deaac2",
+          "Name": "Levels",
+          "Description": "The selected Levels",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Select a level in the active document"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "dfe47202-e657-4fa6-ad37-ee30ce786e8d",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "7e50e412808e47a5a06666d60898c29f",
+      "Inputs": [
+        {
+          "Id": "74da72571d8c424a8cff524ef22b3268",
+          "Name": "Reset",
+          "Description": "bool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "991cc45a0e1e45b2a9579971d5523e1d",
+          "Name": "DynamoXYZ",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2e29601ae32144fea0108d80600ba76f",
+          "Name": "RevitPoints",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "(Sastrugi_Selection) This node allows users to pick points in Revit on the Active Workplane."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
+      "NodeType": "BooleanInputNode",
+      "InputValue": false,
+      "Id": "2c91ad78f79f411797c592cb5b48845d",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "904330233d5e4965b7e30e0b59dee6d7",
+          "Name": "",
+          "Description": "Boolean",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Selection between a true and false."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.Levels, DSRevitNodesUI",
+      "SelectedIndex": 1,
+      "SelectedString": "Ground Floor",
+      "NodeType": "ExtensionNode",
+      "Id": "7be7525411794c9c8c2ee2be74fbe4ff",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "4f443c5e62c645a6ad3ab463c2a3e44d",
+          "Name": "Levels",
+          "Description": "The selected Levels",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Select a level in the active document"
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.FamilyTypes, DSRevitNodesUI",
+      "SelectedIndex": 88,
+      "SelectedString": "M_Rectangular Column:150 x 50mm",
+      "NodeType": "ExtensionNode",
+      "Id": "d38a4759361142b2acb4d1b47317388a",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "692eae77489f4a7db3fc9ee513a187dc",
+          "Name": "Family Type",
+          "Description": "The selected Family Type",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "All family types available in the document."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.WallTypes, DSRevitNodesUI",
+      "SelectedIndex": 14,
+      "SelectedString": "Generic - 150mm",
+      "NodeType": "ExtensionNode",
+      "Id": "ff1365d4b317489082d3221f9de70e15",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "e01a2b88e8b44a68ac1acf8edc9cc23d",
+          "Name": "Wall Type",
+          "Description": "The selected Wall Type",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "All wall types available in the document."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
+      "NodeType": "BooleanInputNode",
+      "InputValue": true,
+      "Id": "0e5119e06f794a03a28d64f883ecd09a",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "54a2735aaff641be928d311ab4d0fdd8",
+          "Name": "",
+          "Description": "Boolean",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Selection between a true and false."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "2c4cdbc0-9d9d-4e70-bd50-c3bf409c5c1e",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "e0c25dce5d00451e832eef4fe0edb992",
+      "Inputs": [
+        {
+          "Id": "4af220d7173847a2b8163c86d8b7ab71",
+          "Name": "picked_points",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ddd36ff546f94a51b3724961e90cd788",
+          "Name": "is_open_facade",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6400dbefe4f749b6acc80240c8f500e5",
+          "Name": "roof_level",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6cc2d3b6b34e497fbbfdec3b2ca13b5e",
+          "Name": "groundfloor_level",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "78bd7b55bcae4b6e88e29a6628e09c21",
+          "Name": "columntype_openfacade",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7769a82ba8d543c095cc114df05c1372",
+          "Name": "waltype_closedfacade",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ab7541ee2d704028967ca9d100ad4b72",
+          "Name": "item",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3c777ec869d74f37a09d386cf1372465",
+          "Name": "panels",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b7d04a695d9e49b18752e8a0eb4e853e",
+          "Name": "FamilyInstance",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "fadaf25b0ca941f0b946fe9be2e70510",
+          "Name": "",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "155e7ac1bcae4e989aed8294960d5271",
+          "Name": "Wall",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": ""
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "995c92313d2a4e25be603634c6deaac2",
+      "End": "6400dbefe4f749b6acc80240c8f500e5",
+      "Id": "58e1c7d40a024c5c81bcc249ae32ecf7"
+    },
+    {
+      "Start": "2e29601ae32144fea0108d80600ba76f",
+      "End": "4af220d7173847a2b8163c86d8b7ab71",
+      "Id": "f1e6c1fb52f8435fa3cdb5c7c61a3981"
+    },
+    {
+      "Start": "904330233d5e4965b7e30e0b59dee6d7",
+      "End": "74da72571d8c424a8cff524ef22b3268",
+      "Id": "0a598b3dd2da44c4a5b04d67d5f27a10"
+    },
+    {
+      "Start": "4f443c5e62c645a6ad3ab463c2a3e44d",
+      "End": "6cc2d3b6b34e497fbbfdec3b2ca13b5e",
+      "Id": "cb30a3a08493414f8a589735a55db7a6"
+    },
+    {
+      "Start": "692eae77489f4a7db3fc9ee513a187dc",
+      "End": "78bd7b55bcae4b6e88e29a6628e09c21",
+      "Id": "87b14926022b474ea3383065c7dbed78"
+    },
+    {
+      "Start": "e01a2b88e8b44a68ac1acf8edc9cc23d",
+      "End": "7769a82ba8d543c095cc114df05c1372",
+      "Id": "5ae9dfeec34f4ea795cf8bd428edf1de"
+    },
+    {
+      "Start": "54a2735aaff641be928d311ab4d0fdd8",
+      "End": "ddd36ff546f94a51b3724961e90cd788",
+      "Id": "05e917b4941b4a518b2d052213ec2b8c"
+    }
+  ],
+  "Dependencies": [
+    "dfe47202-e657-4fa6-ad37-ee30ce786e8d",
+    "2c4cdbc0-9d9d-4e70-bd50-c3bf409c5c1e"
+  ],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Sastrugi",
+      "Version": "2.0.2",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "7e50e412808e47a5a06666d60898c29f"
+      ]
+    }
+  ],
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "2.12",
+      "Data": {}
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "None",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 100.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.12.0.5650",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -846.1611328125,
+      "EyeY": 9893.166015625,
+      "EyeZ": 526.83349609375,
+      "LookX": 3459.24658203125,
+      "LookY": -7543.166015625,
+      "LookZ": -5603.31201171875,
+      "UpX": 0.31246915459632874,
+      "UpY": 0.80385655164718628,
+      "UpZ": -0.50614005327224731
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": false,
+        "Name": "Levels",
+        "Id": "2dd374bc96eb4a7cb13e5a0a2920e89a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -2060.7453139562194,
+        "Y": 22.749556813754964
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "❄_Pick Points on Workplane",
+        "Id": "7e50e412808e47a5a06666d60898c29f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1393.10264123675,
+        "Y": -296.64971151705623
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "Boolean",
+        "Id": "2c91ad78f79f411797c592cb5b48845d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1571.304328845602,
+        "Y": -298.0331096256503
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "Levels",
+        "Id": "7be7525411794c9c8c2ee2be74fbe4ff",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -2053.4198355836479,
+        "Y": 166.40418251830391
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "Family Types",
+        "Id": "d38a4759361142b2acb4d1b47317388a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -2049.3958477678771,
+        "Y": 322.35821392961964
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "Wall Types",
+        "Id": "ff1365d4b317489082d3221f9de70e15",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -2044.8509438747787,
+        "Y": 488.93684735413808
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "Boolean",
+        "Id": "0e5119e06f794a03a28d64f883ecd09a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1565.6149573697312,
+        "Y": -118.72165649938017
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "OS_FacadeSection",
+        "Id": "e0c25dce5d00451e832eef4fe0edb992",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1105.1841507794711,
+        "Y": -295.80923250214551
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "b05a2575d787463e8a20373989e9cc68",
+        "Title": "the roof level",
+        "Nodes": [],
+        "Left": -2061.6186258763473,
+        "Top": -11.553990894146011,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "e5d0a2b038d44c6d8228732fee9b0a30",
+        "Title": "the ground floor level",
+        "Nodes": [],
+        "Left": -2053.1106936218093,
+        "Top": 132.10063481040294,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "f51ec7ce21464aa79b1d30c3d74c447c",
+        "Title": "the column type foor open facade\r\nscript assumes 150 x 50",
+        "Nodes": [],
+        "Left": -2052.3651526527756,
+        "Top": 265.24163282524324,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "f84e47a4701a4aa0a4e6d9028126a1da",
+        "Title": "is open facade",
+        "Nodes": [],
+        "Left": -1567.4169498408444,
+        "Top": -159.2726411378805,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "07995d0f42b446a7bca7ff1f806a4f0d",
+        "Title": "the facade inner concrete wall type\r\nscript assumes 150",
+        "Nodes": [],
+        "Left": -2046.1703450671318,
+        "Top": 431.38906738936822,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": 1376.5163847691833,
+    "Y": 326.27357360345195,
+    "Zoom": 0.59407526254409082
+  }
+}

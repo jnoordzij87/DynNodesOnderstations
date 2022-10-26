@@ -1,0 +1,444 @@
+{
+  "Uuid": "a867503f-4a66-46f8-a005-0e0d96da2be3",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "panel_rotation",
+  "ElementResolver": {
+    "ResolutionMap": {
+      "List": {
+        "Key": "List",
+        "Value": "BuiltIn.ds"
+      }
+    }
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.FamilyInstance.ByFamilyType@Revit.Elements.FamilyType",
+      "Id": "43ca9fbbad234224ae1460efe408dcb8",
+      "Inputs": [
+        {
+          "Id": "1b7045ff0df742399118cc105d4e862c",
+          "Name": "familyType",
+          "Description": "Family Type. Also called Family Symbol.\n\nFamilyType",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "eece566369ba4b74b53a7985554e7b80",
+          "Name": "FamilyInstance[]",
+          "Description": "FamilyInstance[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Obtain a collection of FamilyInstances from the Revit Document and use them in the Dynamo graph\n\nFamilyInstance.ByFamilyType (familyType: FamilyType): FamilyInstance[]"
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.FamilyTypes, DSRevitNodesUI",
+      "SelectedIndex": 3,
+      "SelectedString": "GM_Panel_Marco_Vermeulen:Closed",
+      "NodeType": "ExtensionNode",
+      "Id": "91d26e22558b42d8947d4bcc1eb9699c",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "fc3616466e814807bec9e97311a09ed7",
+          "Name": "Family Type",
+          "Description": "The selected Family Type",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "All family types available in the document."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.FamilyTypes, DSRevitNodesUI",
+      "SelectedIndex": 4,
+      "SelectedString": "GM_Panel_Marco_Vermeulen:Rooster",
+      "NodeType": "ExtensionNode",
+      "Id": "0113af762f9d4237b847802d43f0ea84",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "568e5aad5bee45e48ab3c83c130776be",
+          "Name": "Family Type",
+          "Description": "The selected Family Type",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "All family types available in the document."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.FamilyInstance.ByFamilyType@Revit.Elements.FamilyType",
+      "Id": "a6adc8f4fabd4f8c9ccc55b726ef15d6",
+      "Inputs": [
+        {
+          "Id": "cf636f088cd047a39ffcefc52caa2fb2",
+          "Name": "familyType",
+          "Description": "Family Type. Also called Family Symbol.\n\nFamilyType",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "87d86cf667e64511b0432c68caaea66e",
+          "Name": "FamilyInstance[]",
+          "Description": "FamilyInstance[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Obtain a collection of FamilyInstances from the Revit Document and use them in the Dynamo graph\n\nFamilyInstance.ByFamilyType (familyType: FamilyType): FamilyInstance[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "List.Flatten([a,b]);",
+      "Id": "1e152c56ff0143d88d1d4309367a9175",
+      "Inputs": [
+        {
+          "Id": "c01af3ab1e1949b79a6b32eb288bc98f",
+          "Name": "a",
+          "Description": "a",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "048ce2c680aa45dcab598c74d871b58e",
+          "Name": "b",
+          "Description": "b",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "e519accaa11a43b6829e86d4c3122d2b",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.Element.SetParameterByName@string,var",
+      "Id": "dd378d94dfd94c5e8e85b2ce497c5df8",
+      "Inputs": [
+        {
+          "Id": "45b5e112e0b241f280d050548712ec4c",
+          "Name": "element",
+          "Description": "Revit.Elements.Element",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "cd1934f70f1a44ffba0a25d6955a38bf",
+          "Name": "parameterName",
+          "Description": "The name of the parameter to set.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7a748ff2fae4426cb28d8e3dfc0d0eb7",
+          "Name": "value",
+          "Description": "The value.\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "5b33d1ba0faf49549eadac3933b4a902",
+          "Name": "Element",
+          "Description": "Element",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Set one of the element's parameters.\n\nElement.SetParameterByName (parameterName: string, value: var): Element"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "\"panel_rotation\";",
+      "Id": "6bad777e62d04d0281cf847a4a7f26d8",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "594535d7e2314057bb785eb379a9b5eb",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "import random\r\n\r\ninlist = IN[0]\r\nchoices = [0,90,180,270]\r\noutlist = []\r\n\r\nfor i in inlist:\r\n\toutlist.append(random.choice(choices))\r\n\r\nOUT = outlist",
+      "Engine": "IronPython2",
+      "VariableInputPorts": true,
+      "Id": "08a03cebd47b4a8e87060a6b0d0472a3",
+      "Inputs": [
+        {
+          "Id": "6f805fde151749489af9451307e8e90a",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b1fa63091cb5449abd904cff02db156c",
+          "Name": "OUT",
+          "Description": "Result of the python script",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Runs an embedded Python script."
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "eece566369ba4b74b53a7985554e7b80",
+      "End": "c01af3ab1e1949b79a6b32eb288bc98f",
+      "Id": "ff9859c5ecfe4a2d9ba722b1f9df655f"
+    },
+    {
+      "Start": "fc3616466e814807bec9e97311a09ed7",
+      "End": "1b7045ff0df742399118cc105d4e862c",
+      "Id": "cb12660c0c4f4450979fd3301c3f07d3"
+    },
+    {
+      "Start": "568e5aad5bee45e48ab3c83c130776be",
+      "End": "cf636f088cd047a39ffcefc52caa2fb2",
+      "Id": "a485bbbc11bd47379e625eef9f1ecbd4"
+    },
+    {
+      "Start": "87d86cf667e64511b0432c68caaea66e",
+      "End": "048ce2c680aa45dcab598c74d871b58e",
+      "Id": "3e975c2c23d0494d996d48ebd0dd27bf"
+    },
+    {
+      "Start": "e519accaa11a43b6829e86d4c3122d2b",
+      "End": "45b5e112e0b241f280d050548712ec4c",
+      "Id": "004c905b35f34d29b1a6285b9673ccca"
+    },
+    {
+      "Start": "e519accaa11a43b6829e86d4c3122d2b",
+      "End": "6f805fde151749489af9451307e8e90a",
+      "Id": "785bab89435c46b6b05f560756526205"
+    },
+    {
+      "Start": "594535d7e2314057bb785eb379a9b5eb",
+      "End": "cd1934f70f1a44ffba0a25d6955a38bf",
+      "Id": "0e4c268fdf9043bebd12c8d7c67bec48"
+    },
+    {
+      "Start": "b1fa63091cb5449abd904cff02db156c",
+      "End": "7a748ff2fae4426cb28d8e3dfc0d0eb7",
+      "Id": "713c12b55cc5484cbf56ea26454acfda"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "2.12",
+      "Data": {}
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "None",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.12.0.5650",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "FamilyInstance.ByFamilyType",
+        "Id": "43ca9fbbad234224ae1460efe408dcb8",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 499.25681364793525,
+        "Y": 656.63956144821918
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Family Types",
+        "Id": "91d26e22558b42d8947d4bcc1eb9699c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 120.56890607011439,
+        "Y": 657.47367578209116
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Family Types",
+        "Id": "0113af762f9d4237b847802d43f0ea84",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 130.43020152622034,
+        "Y": 758.38276616766075
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "FamilyInstance.ByFamilyType",
+        "Id": "a6adc8f4fabd4f8c9ccc55b726ef15d6",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 495.45925244275986,
+        "Y": 757.5392798273266
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "1e152c56ff0143d88d1d4309367a9175",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 859.66311506550483,
+        "Y": 704.12243316479
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Element.SetParameterByName",
+        "Id": "dd378d94dfd94c5e8e85b2ce497c5df8",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1690.461746708678,
+        "Y": 723.03638692406389
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "6bad777e62d04d0281cf847a4a7f26d8",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 907.87646005267061,
+        "Y": 845.79542196116881
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Python Script",
+        "Id": "08a03cebd47b4a8e87060a6b0d0472a3",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1279.340314990842,
+        "Y": 884.97694174089088
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "7814bbe02c0f48d3accac3febeef5ab5",
+        "Title": "create a random rotation value per element",
+        "Nodes": [],
+        "Left": 1275.5304939570258,
+        "Top": 840.401527222763,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": 212.5528959007255,
+    "Y": 40.981747277184695,
+    "Zoom": 0.51850969272732894
+  }
+}
