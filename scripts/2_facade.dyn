@@ -188,13 +188,13 @@
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
-      "FunctionSignature": "2c4cdbc0-9d9d-4e70-bd50-c3bf409c5c1e",
+      "FunctionSignature": "78b44264-a003-432a-9347-8a222da1ca7e",
       "FunctionType": "Graph",
       "NodeType": "FunctionNode",
-      "Id": "e0c25dce5d00451e832eef4fe0edb992",
+      "Id": "545b3f4dd2a34ed1b714570ce756be54",
       "Inputs": [
         {
-          "Id": "4af220d7173847a2b8163c86d8b7ab71",
+          "Id": "21d5bae522a74907a04077f85b042150",
           "Name": "picked_points",
           "Description": "var[]..[]",
           "UsingDefaultValue": false,
@@ -203,7 +203,7 @@
           "KeepListStructure": false
         },
         {
-          "Id": "ddd36ff546f94a51b3724961e90cd788",
+          "Id": "685f2cf17d0e43b2a01d5281e8936781",
           "Name": "is_open_facade",
           "Description": "var[]..[]",
           "UsingDefaultValue": false,
@@ -212,7 +212,7 @@
           "KeepListStructure": false
         },
         {
-          "Id": "6400dbefe4f749b6acc80240c8f500e5",
+          "Id": "22aef8d56f7c49f6a7be246e059f0982",
           "Name": "roof_level",
           "Description": "var[]..[]",
           "UsingDefaultValue": false,
@@ -221,7 +221,7 @@
           "KeepListStructure": false
         },
         {
-          "Id": "6cc2d3b6b34e497fbbfdec3b2ca13b5e",
+          "Id": "6c8b4a79b66248528b70710effd454ce",
           "Name": "groundfloor_level",
           "Description": "var[]..[]",
           "UsingDefaultValue": false,
@@ -230,7 +230,7 @@
           "KeepListStructure": false
         },
         {
-          "Id": "78bd7b55bcae4b6e88e29a6628e09c21",
+          "Id": "6f16bfe684b9498a862cd0af9e251d4c",
           "Name": "columntype_openfacade",
           "Description": "var[]..[]",
           "UsingDefaultValue": false,
@@ -239,7 +239,7 @@
           "KeepListStructure": false
         },
         {
-          "Id": "7769a82ba8d543c095cc114df05c1372",
+          "Id": "6b171c819bf8488390819b89b456e2c4",
           "Name": "waltype_closedfacade",
           "Description": "var[]..[]",
           "UsingDefaultValue": false,
@@ -250,8 +250,8 @@
       ],
       "Outputs": [
         {
-          "Id": "ab7541ee2d704028967ca9d100ad4b72",
-          "Name": "panels",
+          "Id": "8531cd5479b74c5fb03fb7060efc1105",
+          "Name": "item",
           "Description": "return value",
           "UsingDefaultValue": false,
           "Level": 2,
@@ -259,8 +259,8 @@
           "KeepListStructure": false
         },
         {
-          "Id": "3c777ec869d74f37a09d386cf1372465",
-          "Name": "columns",
+          "Id": "68fc53149fdf4d41b1876dceb4365d8a",
+          "Name": "0>",
           "Description": "return value",
           "UsingDefaultValue": false,
           "Level": 2,
@@ -268,8 +268,26 @@
           "KeepListStructure": false
         },
         {
-          "Id": "b7d04a695d9e49b18752e8a0eb4e853e",
-          "Name": "concretewall",
+          "Id": "4d37d12107954a4b835ca813b8ae4a73",
+          "Name": "1>",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f86411f64ddc47ae9360c44a639e51ef",
+          "Name": "2>",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "8a92a62f7a2f4a368c577789e78b0641",
+          "Name": "3>",
           "Description": "return value",
           "UsingDefaultValue": false,
           "Level": 2,
@@ -284,13 +302,13 @@
   "Connectors": [
     {
       "Start": "995c92313d2a4e25be603634c6deaac2",
-      "End": "6400dbefe4f749b6acc80240c8f500e5",
-      "Id": "58e1c7d40a024c5c81bcc249ae32ecf7"
+      "End": "22aef8d56f7c49f6a7be246e059f0982",
+      "Id": "b524314c80a34562a9b43db09a8b6569"
     },
     {
       "Start": "2e29601ae32144fea0108d80600ba76f",
-      "End": "4af220d7173847a2b8163c86d8b7ab71",
-      "Id": "f1e6c1fb52f8435fa3cdb5c7c61a3981"
+      "End": "21d5bae522a74907a04077f85b042150",
+      "Id": "4b04be8d615b4f4dbbfef18eeb835cff"
     },
     {
       "Start": "904330233d5e4965b7e30e0b59dee6d7",
@@ -299,28 +317,28 @@
     },
     {
       "Start": "4f443c5e62c645a6ad3ab463c2a3e44d",
-      "End": "6cc2d3b6b34e497fbbfdec3b2ca13b5e",
-      "Id": "cb30a3a08493414f8a589735a55db7a6"
+      "End": "6c8b4a79b66248528b70710effd454ce",
+      "Id": "47b6a105cbe34384b852048a68e33f84"
     },
     {
       "Start": "692eae77489f4a7db3fc9ee513a187dc",
-      "End": "78bd7b55bcae4b6e88e29a6628e09c21",
-      "Id": "87b14926022b474ea3383065c7dbed78"
+      "End": "6f16bfe684b9498a862cd0af9e251d4c",
+      "Id": "e53ee224460043f58cb958bdfef29024"
     },
     {
       "Start": "e01a2b88e8b44a68ac1acf8edc9cc23d",
-      "End": "7769a82ba8d543c095cc114df05c1372",
-      "Id": "5ae9dfeec34f4ea795cf8bd428edf1de"
+      "End": "6b171c819bf8488390819b89b456e2c4",
+      "Id": "edb9cd73ace845ec8781bc76ab1c6780"
     },
     {
       "Start": "54a2735aaff641be928d311ab4d0fdd8",
-      "End": "ddd36ff546f94a51b3724961e90cd788",
-      "Id": "05e917b4941b4a518b2d052213ec2b8c"
+      "End": "685f2cf17d0e43b2a01d5281e8936781",
+      "Id": "38f6bf6baf8746a2b0d0532888980cea"
     }
   ],
   "Dependencies": [
     "dfe47202-e657-4fa6-ad37-ee30ce786e8d",
-    "2c4cdbc0-9d9d-4e70-bd50-c3bf409c5c1e"
+    "78b44264-a003-432a-9347-8a222da1ca7e"
   ],
   "NodeLibraryDependencies": [
     {
@@ -445,12 +463,12 @@
       {
         "ShowGeometry": true,
         "Name": "OS_FacadeSection",
-        "Id": "e0c25dce5d00451e832eef4fe0edb992",
+        "Id": "545b3f4dd2a34ed1b714570ce756be54",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1107.9646618507095,
-        "Y": -298.58974357338377
+        "X": -1128.0389369859288,
+        "Y": -300.68729961936651
       }
     ],
     "Annotations": [
@@ -473,7 +491,7 @@
         "Height": 776.490838248284,
         "FontSize": 36.0,
         "InitialTop": 215.92617231983564,
-        "InitialHeight": 623.490838248284,
+        "InitialHeight": 645.490838248284,
         "TextblockHeight": 173.0,
         "Background": "#FFFFAA45"
       },
@@ -562,8 +580,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": 811.849797792755,
-    "Y": 214.87923917814291,
-    "Zoom": 0.38390759695730431
+    "X": 1082.6325763283021,
+    "Y": 260.55392574429237,
+    "Zoom": 0.61915010473077936
   }
 }
