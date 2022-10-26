@@ -2,7 +2,7 @@
   "Uuid": "6fda496c-bf56-4b22-b411-7ef265ba641b",
   "IsCustomNode": false,
   "Description": "",
-  "Name": "2facade_refactored",
+  "Name": "2_facade",
   "ElementResolver": {
     "ResolutionMap": {
       "Math": {
@@ -251,15 +251,6 @@
       "Outputs": [
         {
           "Id": "ab7541ee2d704028967ca9d100ad4b72",
-          "Name": "item",
-          "Description": "return value",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "3c777ec869d74f37a09d386cf1372465",
           "Name": "panels",
           "Description": "return value",
           "UsingDefaultValue": false,
@@ -268,26 +259,17 @@
           "KeepListStructure": false
         },
         {
+          "Id": "3c777ec869d74f37a09d386cf1372465",
+          "Name": "columns",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
           "Id": "b7d04a695d9e49b18752e8a0eb4e853e",
-          "Name": "FamilyInstance",
-          "Description": "return value",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "fadaf25b0ca941f0b946fe9be2e70510",
-          "Name": "",
-          "Description": "return value",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "155e7ac1bcae4e989aed8294960d5271",
-          "Name": "Wall",
+          "Name": "concretewall",
           "Description": "return value",
           "UsingDefaultValue": false,
           "Level": 2,
@@ -397,8 +379,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -2060.7453139562194,
-        "Y": 22.749556813754964
+        "X": -2048.772673787063,
+        "Y": 250.22972002773665
       },
       {
         "ShowGeometry": false,
@@ -417,8 +399,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1571.304328845602,
-        "Y": -298.0331096256503
+        "X": -1573.6978989229808,
+        "Y": -294.44275450958224
       },
       {
         "ShowGeometry": false,
@@ -427,8 +409,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -2053.4198355836479,
-        "Y": 166.40418251830391
+        "X": -2041.4471954144933,
+        "Y": 393.88434573228562
       },
       {
         "ShowGeometry": false,
@@ -437,8 +419,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -2049.3958477678771,
-        "Y": 322.35821392961964
+        "X": -2037.4232075987229,
+        "Y": 549.83837714360163
       },
       {
         "ShowGeometry": false,
@@ -447,8 +429,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -2044.8509438747787,
-        "Y": 488.93684735413808
+        "X": -2032.878303705623,
+        "Y": 716.41701056811962
       },
       {
         "ShowGeometry": false,
@@ -467,17 +449,40 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1105.1841507794711,
-        "Y": -295.80923250214551
+        "X": -1107.9646618507095,
+        "Y": -298.58974357338377
       }
     ],
     "Annotations": [
       {
+        "Id": "eea403715f184a938873140dea4bf757",
+        "Title": "default inputs (only change if revit template is not working)",
+        "Nodes": [
+          "2dd374bc96eb4a7cb13e5a0a2920e89a",
+          "7be7525411794c9c8c2ee2be74fbe4ff",
+          "d38a4759361142b2acb4d1b47317388a",
+          "ff1365d4b317489082d3221f9de70e15",
+          "b05a2575d787463e8a20373989e9cc68",
+          "e5d0a2b038d44c6d8228732fee9b0a30",
+          "f51ec7ce21464aa79b1d30c3d74c447c",
+          "07995d0f42b446a7bca7ff1f806a4f0d"
+        ],
+        "Left": -2059.6459857071932,
+        "Top": 32.926172319835644,
+        "Width": 346.22277810847027,
+        "Height": 776.490838248284,
+        "FontSize": 36.0,
+        "InitialTop": 215.92617231983564,
+        "InitialHeight": 623.490838248284,
+        "TextblockHeight": 173.0,
+        "Background": "#FFFFAA45"
+      },
+      {
         "Id": "b05a2575d787463e8a20373989e9cc68",
         "Title": "the roof level",
         "Nodes": [],
-        "Left": -2061.6186258763473,
-        "Top": -11.553990894146011,
+        "Left": -2049.6459857071932,
+        "Top": 215.92617231983564,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -490,8 +495,8 @@
         "Id": "e5d0a2b038d44c6d8228732fee9b0a30",
         "Title": "the ground floor level",
         "Nodes": [],
-        "Left": -2053.1106936218093,
-        "Top": 132.10063481040294,
+        "Left": -2041.1380534526529,
+        "Top": 359.58079802438465,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -504,8 +509,8 @@
         "Id": "f51ec7ce21464aa79b1d30c3d74c447c",
         "Title": "the column type foor open facade\r\nscript assumes 150 x 50",
         "Nodes": [],
-        "Left": -2052.3651526527756,
-        "Top": 265.24163282524324,
+        "Left": -2040.3925124836232,
+        "Top": 492.72179603922467,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -532,8 +537,22 @@
         "Id": "07995d0f42b446a7bca7ff1f806a4f0d",
         "Title": "the facade inner concrete wall type\r\nscript assumes 150",
         "Nodes": [],
-        "Left": -2046.1703450671318,
-        "Top": 431.38906738936822,
+        "Left": -2034.1977048979732,
+        "Top": 658.86923060334959,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "e0ec19ec75b340e1b7ea2b08b744de9e",
+        "Title": "re-trigger point placement",
+        "Nodes": [],
+        "Left": -1572.8161800814589,
+        "Top": -335.30265832011492,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -543,8 +562,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": 1376.5163847691833,
-    "Y": 326.27357360345195,
-    "Zoom": 0.59407526254409082
+    "X": 811.849797792755,
+    "Y": 214.87923917814291,
+    "Zoom": 0.38390759695730431
   }
 }

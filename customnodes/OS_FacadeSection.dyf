@@ -813,27 +813,6 @@
       "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Output, DynamoCore",
       "NodeType": "OutputNode",
       "ElementResolver": null,
-      "Symbol": "item",
-      "Id": "657a8a3064a64e5d9a672995d4ddf3a7",
-      "Inputs": [
-        {
-          "Id": "d7fe9fafb7714292b2bbe6407b81d4f8",
-          "Name": "",
-          "Description": "",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [],
-      "Replication": "Disabled",
-      "Description": "A function output, use with custom nodes"
-    },
-    {
-      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Output, DynamoCore",
-      "NodeType": "OutputNode",
-      "ElementResolver": null,
       "Symbol": "panels",
       "Id": "ebbef66ecfe04522b57233e36e56a772",
       "Inputs": [
@@ -855,7 +834,7 @@
       "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Output, DynamoCore",
       "NodeType": "OutputNode",
       "ElementResolver": null,
-      "Symbol": "FamilyInstance",
+      "Symbol": "columns",
       "Id": "471756ba99654ed99d0c401d9b8ce674",
       "Inputs": [
         {
@@ -876,28 +855,7 @@
       "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Output, DynamoCore",
       "NodeType": "OutputNode",
       "ElementResolver": null,
-      "Symbol": "",
-      "Id": "c1d81a7935b94de5bd71ecb98c095759",
-      "Inputs": [
-        {
-          "Id": "929f6169c6bd4c72950a4a04040a7ce6",
-          "Name": "",
-          "Description": "",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [],
-      "Replication": "Disabled",
-      "Description": "A function output, use with custom nodes"
-    },
-    {
-      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Output, DynamoCore",
-      "NodeType": "OutputNode",
-      "ElementResolver": null,
-      "Symbol": "Wall",
+      "Symbol": "concretewall",
       "Id": "54b44ce8f0d04b069020223274491ff4",
       "Inputs": [
         {
@@ -940,11 +898,6 @@
       "Start": "84679a40d2014311bdd6689af517658e",
       "End": "d70d4c23a11b482e8b0cbe2d4feb76d9",
       "Id": "174dbd5d589f4993b0bf755b451ccdad"
-    },
-    {
-      "Start": "047bf7c778014a178430f7454bf31cf1",
-      "End": "d7fe9fafb7714292b2bbe6407b81d4f8",
-      "Id": "2aa4b4ef9a414febbce5f3610d83babf"
     },
     {
       "Start": "864da7ed0f3940d489dfc97c6e768336",
@@ -1055,11 +1008,6 @@
       "Start": "ab73153b677b4bf4bf75f6c7fff2c04c",
       "End": "65557e5ec3e14762a67efb7234a3a134",
       "Id": "19e28cd7828e4fd8b52f300130ad6c76"
-    },
-    {
-      "Start": "1c11e2e33855445fb9e9800f7a7fdf0f",
-      "End": "929f6169c6bd4c72950a4a04040a7ce6",
-      "Id": "faca3d60a5f64b09928d700dc28ce556"
     },
     {
       "Start": "c83c500eadfb4e248daf03e04f6b87ef",
@@ -1265,7 +1213,7 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 0.0,
+        "X": -97.260838220993946,
         "Y": 0.0
       },
       {
@@ -1275,7 +1223,7 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 0.0,
+        "X": -97.260838220993946,
         "Y": 150.0
       },
       {
@@ -1285,7 +1233,7 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 0.0,
+        "X": -97.260838220993946,
         "Y": 300.0
       },
       {
@@ -1295,7 +1243,7 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 0.0,
+        "X": -97.260838220993946,
         "Y": 450.0
       },
       {
@@ -1305,7 +1253,7 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 0.0,
+        "X": -97.260838220993946,
         "Y": 600.0
       },
       {
@@ -1315,18 +1263,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 0.0,
+        "X": -97.260838220993946,
         "Y": 750.0
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "Output",
-        "Id": "657a8a3064a64e5d9a672995d4ddf3a7",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 2518.6706586853188,
-        "Y": 0.0
       },
       {
         "ShowGeometry": true,
@@ -1335,8 +1273,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 2518.6706586853188,
-        "Y": 150.0
+        "X": 2539.85529694659,
+        "Y": 83.481422583340674
       },
       {
         "ShowGeometry": true,
@@ -1345,18 +1283,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 2518.6706586853188,
-        "Y": 300.0
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "Output",
-        "Id": "c1d81a7935b94de5bd71ecb98c095759",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 2518.6706586853188,
-        "Y": 450.0
+        "X": 2540.7142861636225,
+        "Y": 309.64408702175785
       },
       {
         "ShowGeometry": true,
@@ -1365,8 +1293,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 2518.6706586853188,
-        "Y": 600.0
+        "X": 2571.9118485315107,
+        "Y": 734.97730124929012
       }
     ],
     "Annotations": [
@@ -1387,7 +1315,7 @@
         "Height": 409.54605302047457,
         "FontSize": 36.0,
         "InitialTop": 0.0,
-        "InitialHeight": 428.57391529953429,
+        "InitialHeight": 382.54605302047457,
         "TextblockHeight": 43.0,
         "Background": "#FFC1D676"
       },
@@ -1434,8 +1362,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": 273.90859423114694,
-    "Y": 179.45048979193029,
-    "Zoom": 0.40253867142447847
+    "X": 86.799161174156325,
+    "Y": 237.03293219124794,
+    "Zoom": 0.49351826365032436
   }
 }
